@@ -1,13 +1,24 @@
-ID,Name,State,PNGFilename,Text,x,y,visible
-0,StartScenario,Characters,,Start Scenario,100,650,yes
-1,Start_GoomazonPays,Start,,Goomazon,100,600,yes
-2,Start_CityPays,Start,,City Government,400,600,yes
-3,Start_RaiseTaxes,Start,,Raise Taxes,700,600,yes
-4,GoomazonMoves_CityPays,GoomazonMoves,,Yes: City Pays,100,600,yes
-5,GoomazonMoves_RaiseTaxes,GoomazonMoves,,Yes: Raise Taxes,300,600,yes
-6,GoomazonMoves_BuildRival,GoomazonMoves,,Build a Rival,500,600,yes
-7,GoomazonMoves_IgnoreThem,GoomazonMoves,,Ignore Them,700,600,yes
-8,CityPays_CutTheArts,CityPays,,The Arts,100,600,yes
-9,CityPays_CutTransportation,CityPays,,Transportation,300,600,yes
-10,CityPays_CutCityWages,CityPays,,City Wages,500,600,yes
-11,CityPays_CutParks,CityPays,,Parks,700,600,yes
+ID,Name,State,PNGFilename,Text,x,y,width,height,visible
+0,Characters_button,Instructions,,,230,840,350,130,yes
+1,Start_button,Instructions,,,1320,840,350,130,yes
+2,Back_button,Characters,,,230,840,350,130,yes
+3,Start_button,Characters,,,1320,840,350,130,yes
+4,Yes_button,Screen1,,,360,230,350,130,yes
+5,No_button,Screen1,,,1200,230,350,130,yes
+6,Free_button,Screen2,,,360,230,350,130,yes
+7,Cheap_button,Screen2,,,780,230,350,130,yes
+8,Expensive_button,Screen2,,,1200,230,350,130,yes
+9,Ignore_button,Screen3,,,360,230,350,130,yes
+10,Repair_button,Screen3,,,1200,230,350,130,yes
+11,Yes_button,Screen4,,,360,230,350,130,yes
+12,No_button,Screen4,,,1200,230,350,130,yes
+13,Yes_button,Screen5,,,360,230,350,130,yes
+14,No_button,Screen5,,,1200,230,350,130,yes
+15,Donation_button,Screen6,,,360,230,350,130,yes
+16,Loans_button,Screen6,,,1200,230,350,130,yes
+17,Yes_button,Screen7,,,360,230,350,130,yes
+18,No_button,Screen7,,,1200,230,350,130,yes
+19,Yes_button,Screen8,,,360,230,350,130,yes
+20,No_button,Screen8,,,1200,230,350,130,yes
+21,Commit_button,Screen9,,,360,230,350,130,yes
+22,Donate_button,Screen9,,,1200,230,350,130,yes
