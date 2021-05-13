@@ -14,11 +14,11 @@ ID,Name,State,PNGFilename,Text,x,y,width,height,visible
 12,No_button,Screen4,,,1200,230,350,130,yes
 13,Yes_button,Screen5,,,360,230,350,130,yes
 14,No_button,Screen5,,,1200,230,350,130,yes
-15,Donation_button,Screen6,,,360,230,350,130,yes
+15,Donation_button,Screen6,,,360,230,720,130,yes
 16,Loans_button,Screen6,,,1200,230,350,130,yes
 17,Yes_button,Screen7,,,360,230,350,130,yes
 18,No_button,Screen7,,,1200,230,350,130,yes
 19,Yes_button,Screen8,,,360,230,350,130,yes
 20,No_button,Screen8,,,1200,230,350,130,yes
-21,Commit_button,Screen9,,,360,230,350,130,yes
-22,Donate_button,Screen9,,,1200,230,350,130,yes
+21,Commit_button,Screen9,,,360,230,600,130,yes
+22,Donate_button,Screen9,,,1020,230,540,130,yes

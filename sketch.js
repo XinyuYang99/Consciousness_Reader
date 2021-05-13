@@ -35,14 +35,20 @@ function preload() {
 
   // Preload images
   S1YesResult = loadImage('assets/S1YesS2.png');
+  S1NoResult = loadImage('assets/S1NoE1.png');
+  S2FreeResult = loadImage('assets/S2FreeE2.png');
   S2CheapResult = loadImage('assets/S2100S3.png');
   S2ExpensiveResult = loadImage('assets/S21000S4.png');
   S3IgnoreResult = loadImage('assets/S3IgnoreS5.png');
   S3RepairResult = loadImage('assets/S3RepairS6.png');
   S4YesResult = loadImage('assets/S4YesS9.png');
+  S4NoResult = loadImage('assets/S7NoE4.png');
   S5YesResult = loadImage('assets/S3RepairS6.png');
+  S5NoResult = loadImage('assets/S5NoE5.png');
   S6DonationResult = loadImage('assets/S6DonateS7.png');
   S6LoansResult = loadImage('assets/S6LoansS8.png');
+  S9CommitResult = loadImage('assets/S9CommitE6.png');
+  S9DonateResult = loadImage('assets/S9DonateE7.png');
 }
 
 // Setup the adventure manager
@@ -105,19 +111,37 @@ function setupClickables() {
 
   // Hover effects for each buttons in different rooms
   clickables[4].onHover = clickable4ButtonHover;
+  clickables[5].onHover = clickable5ButtonHover;
+  clickables[6].onHover = clickable6ButtonHover;
   clickables[7].onHover = clickable7ButtonHover;
   clickables[8].onHover = clickable8ButtonHover;
   clickables[9].onHover = clickable9ButtonHover;
   clickables[10].onHover = clickable10ButtonHover;
   clickables[11].onHover = clickable11ButtonHover;
+  clickables[12].onHover = clickable12ButtonHover;
   clickables[13].onHover = clickable10ButtonHover;
+  clickables[14].onHover = clickable14ButtonHover;
   clickables[15].onHover = clickable15ButtonHover;
   clickables[16].onHover = clickable16ButtonHover;
+  clickables[17].onHover = clickable17ButtonHover;
+  clickables[18].onHover = clickable18ButtonHover;
+  clickables[19].onHover = clickable19ButtonHover;
+  clickables[20].onHover = clickable20ButtonHover;
+  clickables[21].onHover = clickable21ButtonHover;
+  clickables[22].onHover = clickable22ButtonHover;
 }
 
 // tint when mouse is over
 clickable4ButtonHover = function () {
   image(S1YesResult,Hoverweight,Hoverheight); 
+}
+
+clickable5ButtonHover = function () {
+  image(S1NoResult,Hoverweight,Hoverheight); 
+}
+
+clickable6ButtonHover = function () {
+  image(S2FreeResult,Hoverweight,Hoverheight); 
 }
 
 clickable7ButtonHover = function () {
@@ -140,6 +164,14 @@ clickable11ButtonHover = function () {
   image(S4YesResult,Hoverweight,Hoverheight); 
 }
 
+clickable12ButtonHover = function () {
+  image(S4NoResult,Hoverweight,Hoverheight); 
+}
+
+clickable14ButtonHover = function () {
+  image(S5NoResult,Hoverweight,Hoverheight); 
+}
+
 clickable15ButtonHover = function () {
   image(S6DonationResult,Hoverweight,Hoverheight); 
 }
@@ -148,6 +180,29 @@ clickable16ButtonHover = function () {
   image(S6LoansResult,Hoverweight,Hoverheight); 
 }
 
+clickable17ButtonHover = function () {
+  image(S5NoResult,Hoverweight,Hoverheight); 
+}
+
+clickable18ButtonHover = function () {
+  image(S4NoResult,Hoverweight,Hoverheight); 
+}
+
+clickable19ButtonHover = function () {
+  image(S5NoResult,Hoverweight,Hoverheight); 
+}
+
+clickable20ButtonHover = function () {
+  image(S7NoE4,Hoverweight,Hoverheight); 
+}
+
+clickable21ButtonHover = function () {
+  image(S9CommitResult,Hoverweight,Hoverheight); 
+}
+
+clickable22ButtonHover = function () {
+  image(S9DonateResult,Hoverweight,Hoverheight); 
+}
 
 clickableButtonPressed = function() {
   adventureManager.clickablePressed(this.name);
