@@ -53,7 +53,7 @@ function preload() {
 
 // Setup the adventure manager
 function setup() {
-  createCanvas(1920, 1080);
+  createCanvas(1280,720);
 
   // setup the clickables = this will allocate the array
   clickables = clickablesManager.setup();
@@ -106,8 +106,8 @@ function setupClickables() {
       clickables[i].strokeWeight = 0;
       clickables[i].onPress = clickableButtonPressed;
   }    
-  Hoverweight = 0;
-  Hoverheight = 390;
+  Hoverweight = 160;
+  Hoverheight = 260;
 
   // Hover effects for each buttons in different rooms
   clickables[4].onHover = clickable4ButtonHover;
@@ -193,7 +193,7 @@ clickable19ButtonHover = function () {
 }
 
 clickable20ButtonHover = function () {
-  image(S7NoE4,Hoverweight,Hoverheight); 
+  image(S4NoResult,Hoverweight,Hoverheight); 
 }
 
 clickable21ButtonHover = function () {

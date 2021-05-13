@@ -23,3 +23,10 @@ Screen8,,,,Yes_button,,Ending3
 Screen8,,,,No_button,,Ending4
 Screen9,,,,Commit_button,,Ending6
 Screen9,,,,Donate_button,,Ending7
+Ending1,,,,Back_button,,Screen1
+Ending2,,,,Back_button,,Screen1
+Ending3,,,,Back_button,,Screen1
+Ending4,,,,Back_button,,Screen1
+Ending5,,,,Back_button,,Screen1
+Ending6,,,,Back_button,,Screen1
+Ending7,,,,Back_button,,Screen1
