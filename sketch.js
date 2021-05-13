@@ -2,7 +2,12 @@
   Consciousness_reader
   by Xinyu Yang
 
-  Uses the p5.2DAdventure.js class 
+  This is the files using p5.play.js and p5.2DAdventure.js libraries to create 
+  a Speculative Technology story and shows how it will effect in the communities
+  The game is clickable which the player as the CEO of the company will choose 
+  how they want the company goes. The player will use the mouse to make 
+  decisions and the communities will show they attitude to this product and 
+  company.
   
 ------------------------------------------------------------------------------------
 
@@ -27,6 +32,8 @@ var selectedAvatarAnimation = 0;  // default to zero
 function preload() {
   clickablesManager = new ClickableManager('data/clickableLayout.csv');
   adventureManager = new AdventureManager('data/adventureStates.csv', 'data/interactionTable.csv', 'data/clickableLayout.csv');
+
+  // Preload images
   S1YesResult = loadImage('assets/S1YesS2.png');
   S2CheapResult = loadImage('assets/S2100S3.png');
   S2ExpensiveResult = loadImage('assets/S21000S4.png');
@@ -87,24 +94,25 @@ function mouseReleased() {
 //-------------- CLICKABLE CODE  ---------------//
 
 function setupClickables() {
-    // Hide bag buttons
-    for( let i = 0; i < clickables.length; i++ ) {
-        clickables[i].color = "#00000000";
-        clickables[i].strokeWeight = 0;
-        clickables[i].onPress = clickableButtonPressed;
-    }    
-    Hoverweight = 0;
-    Hoverheight = 390;
+  // Hide bag buttons
+  for( let i = 0; i < clickables.length; i++ ) {
+      clickables[i].color = "#00000000";
+      clickables[i].strokeWeight = 0;
+      clickables[i].onPress = clickableButtonPressed;
+  }    
+  Hoverweight = 0;
+  Hoverheight = 390;
 
-    clickables[4].onHover = clickable4ButtonHover;
-    clickables[7].onHover = clickable7ButtonHover;
-    clickables[8].onHover = clickable8ButtonHover;
-    clickables[9].onHover = clickable9ButtonHover;
-    clickables[10].onHover = clickable10ButtonHover;
-    clickables[11].onHover = clickable11ButtonHover;
-    clickables[13].onHover = clickable10ButtonHover;
-    clickables[15].onHover = clickable15ButtonHover;
-    clickables[16].onHover = clickable16ButtonHover;
+  // Hover effects for each buttons in different rooms
+  clickables[4].onHover = clickable4ButtonHover;
+  clickables[7].onHover = clickable7ButtonHover;
+  clickables[8].onHover = clickable8ButtonHover;
+  clickables[9].onHover = clickable9ButtonHover;
+  clickables[10].onHover = clickable10ButtonHover;
+  clickables[11].onHover = clickable11ButtonHover;
+  clickables[13].onHover = clickable10ButtonHover;
+  clickables[15].onHover = clickable15ButtonHover;
+  clickables[16].onHover = clickable16ButtonHover;
 }
 
 // tint when mouse is over
